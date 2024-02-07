@@ -18,11 +18,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
   }, [images.length]);
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex - 1) % images.length);
   };
 
   const prevImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1 + images.length) % images.length);
   };
 
   const toggleOpen = () => {

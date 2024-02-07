@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Kalata = () => {
+const Cartt = () => {
   const [show, setShow] = useState(false);
 
   const toggleShow = () => {
@@ -13,7 +13,7 @@ const Kalata = () => {
         <img src="./public/icon-cart.svg" alt="" />
       </button>
       {show && (
-        <div className='w-[360px] h-[256px] rounded-xl bg-white'>
+        <div className='z-50 fixed -ml-80 mt-12 w-[360px] h-[256px] rounded-xl bg-white'>
 
         </div>
       )}
@@ -21,4 +21,4 @@ const Kalata = () => {
   );
 };
 
-export default Kalata;
+export default Cartt;

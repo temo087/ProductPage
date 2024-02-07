@@ -1,4 +1,4 @@
-
+import Cartt from "./Cartt";
 import React from "react";
 interface HeaderProps {
   menu: boolean;
@@ -7,7 +7,9 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ menu, setMenu }) => {
   return (
-    <header className="flex w-full h-16 bg-red-800">
+    <header className="justify-around flex w-full h-16 bg-red-800">
+      <div className="flex">
+
       <button
         className="w-6 h-6 bg-transparent ml-5 mt-3"
         onClick={() => {
@@ -28,7 +30,8 @@ const Header: React.FC<HeaderProps> = ({ menu, setMenu }) => {
         src="./public/logo.svg"
         alt=""
       />
-
+          </div>
+<Cartt/>
     </header>
   );
 };

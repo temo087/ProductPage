@@ -1,4 +1,3 @@
-
 import  { useState } from "react";
 import Header from "./components/Header";
 import ImageSlider from "./components/ImigeSlider";
@@ -30,7 +29,7 @@ function App() {
         <Header menu={menu} setMenu={setMenu} />
         <ImageSlider
           images={images}
-          currentIndex ={currentIndex}
+          currentIndex={currentIndex} 
           nextImage={nextImage}
           prevImage={prevImage}
         />

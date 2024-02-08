@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+
+import closeIcon from "./icon-close.svg"; // Import the SVG file
 
 interface MenuProps {
   menu: boolean;
@@ -21,7 +22,7 @@ const Menu: React.FC<MenuProps> = ({ menu, setMenu }) => {
                 zIndex: "50",
                 height: "15px",
                 width: "14px",
-                backgroundImage: `url("./public/icon-close.svg")`
+                backgroundImage: `url(${closeIcon})` // Use closeIcon variable
               }}
             ></div>
           </button>
@@ -31,7 +32,7 @@ const Menu: React.FC<MenuProps> = ({ menu, setMenu }) => {
             }}
             className="absolute top-0 right-0 m-3 w-[14px] h-[15px]"
           >
-            <img src="./public/icon-close.svg" alt="close-icon" />
+            <img src={closeIcon} alt="close-icon" /> {/* Use closeIcon variable */}
           </button>
           <ul className="ml-9 mt-5">
             <li>

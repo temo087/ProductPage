@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "./components/Header";
 import ImageSlider from "./components/ImigeSlider";
 import Menu from "./components/Menu";
+import Info from "./components/Info";
 
 function App() {
   const [menu, setMenu] = useState(false);
@@ -34,6 +35,7 @@ function App() {
           prevImage={prevImage}
         />
         <Menu menu={menu} setMenu={setMenu} />
+        <Info/>
       </main>
     </>
   );

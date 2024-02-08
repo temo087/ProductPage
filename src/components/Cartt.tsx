@@ -1,4 +1,4 @@
-// Cartt.tsx
+
 import React from 'react';
 
 interface CarttProps {

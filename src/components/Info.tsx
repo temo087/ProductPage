@@ -15,12 +15,13 @@ const Info: React.FC = () => {
   };
 
   const handleAddToCart = (): void => {
-    // Assuming some validation logic here, for demonstration purpose
+
     if (Math.random() < 0.5) {
       setIsCardDeclined(true);
     } else {
-      // Logic to proceed with adding to cart
+     return
     }
+    
   };
 
   return (

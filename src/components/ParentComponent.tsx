@@ -1,4 +1,4 @@
-// ParentComponent.tsx
+
 import React, { useState } from 'react';
 import Cartt from './Cartt';
 import Info from './Info';

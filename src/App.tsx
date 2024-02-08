@@ -1,5 +1,5 @@
-// App.tsx
-import React, { useState } from "react";
+
+import  { useState } from "react";
 import Header from "./components/Header";
 import ImageSlider from "./components/ImigeSlider";
 import Menu from "./components/Menu";
